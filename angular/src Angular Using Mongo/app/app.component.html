@@ -1,0 +1,33 @@
+<h1> KULFI DATE ! roast the host </h1>
+
+
+<form (submit)="saveResturant()">
+Resturant Id : <input type="number" name="resturantId" [(ngModel)]="resturant.resturantId" >
+<br> Resturant Name : <input type="text" name="resturantName" [(ngModel)]="resturant.resturantName" >
+<br> Resturant Location :<input type="text" name="location" [(ngModel)]="resturant.location" >
+<br> Resturant Rating :<input type="number" name="rating" [(ngModel)]="resturant.rating" >
+<input type="submit" value="save" class="btn btn-primary">
+</form>
+
+
+
+<input type="submit" value=" Update " (click)="updateResturant()">
+
+<input type="submit" value=" Delete " (click)="deleteResturant()">
+
+
+<input type="submit" value=" Get By ID " (click)="getResturant()">
+
+
+<input type="submit" value=" Get All Resturant " (click)="getResturants()">
+
+
+-------------------------------------
+
+cdn bootstrap link
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
