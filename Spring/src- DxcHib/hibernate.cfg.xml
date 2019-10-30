@@ -1,0 +1,20 @@
+ <hibernate-configuration>
+    <session-factory>
+
+    <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@127.0.0.1:1521:XE</property>
+    <property name="connection.username">dxc</property>
+    <property name="connection.password">pass</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+    <property name="show_sql">true</property>
+    <property name="hibernate.connection.pool_size">1</property>
+    <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+    
+   
+    <property name="hbm2ddl.auto">update</property>
+       
+        <mapping class="com.myhib.model.School"></mapping>
+  
+      
+    </session-factory> 
+</hibernate-configuration>
